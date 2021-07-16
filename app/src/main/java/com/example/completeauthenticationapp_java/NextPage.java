@@ -22,5 +22,7 @@ public class NextPage extends AppCompatActivity {
         OTPField = findViewById(R.id.editText51);
         submitButton = findViewById(R.id.button9);
         firebaseAuth = FirebaseAuth.getInstance();
+
+        generateOTP();
     }
 }
