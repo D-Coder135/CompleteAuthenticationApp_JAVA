@@ -52,6 +52,7 @@ public class EmailLoginPage extends AppCompatActivity {
                         passwordField.setError("Please Enter Your Password!");
                     }
                 }
+                progressBar.setVisibility(View.VISIBLE);
             }
         });
     }
