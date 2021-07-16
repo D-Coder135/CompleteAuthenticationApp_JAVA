@@ -27,5 +27,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="310dp"
         android:ems="10"
+        android:hint="Enter Your Password"
         android:inputType="textPersonName" />
 </RelativeLayout>
