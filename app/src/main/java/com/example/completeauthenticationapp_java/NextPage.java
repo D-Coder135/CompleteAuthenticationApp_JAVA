@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class NextPage extends AppCompatActivity {
     EditText OTPField;
     Button submitButton;
+    FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
