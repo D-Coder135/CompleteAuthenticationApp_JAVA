@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="256dp"
-        android:layout_marginEnd="156dp"
-        android:text="Button" />
+        android:layout_marginEnd="101dp"
+        android:text="Login/SignUp With Email" />
 </RelativeLayout>
