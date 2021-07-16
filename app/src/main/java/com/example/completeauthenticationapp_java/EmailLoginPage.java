@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -61,7 +62,7 @@ public class EmailLoginPage extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-
+                            Toast.makeText(EmailLoginPage.this, "Logged In Successfully.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
