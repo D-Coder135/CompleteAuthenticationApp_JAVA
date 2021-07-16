@@ -46,10 +46,10 @@ public class EmailLoginPage extends AppCompatActivity {
                 String password = passwordField.getText().toString();
 
                 if (email.isEmpty()) {
-                    emailField.setError("Please Enter Your Email.");
+                    emailField.setError("Please Enter Your Email!");
                 } else {
                     if (password.isEmpty()) {
-
+                        passwordField.setError("Please Enter Your Password!");
                     }
                 }
             }
