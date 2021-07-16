@@ -3,6 +3,7 @@ package com.example.completeauthenticationapp_java;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -22,5 +23,12 @@ public class OTPLoginPage extends AppCompatActivity {
         countryCodePicker.registerCarrierNumberEditText(mobileNumberField);
         sendOTPButton = findViewById(R.id.button7);
         backButton = findViewById(R.id.button8);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
