@@ -77,4 +77,8 @@ public class NextPage extends AppCompatActivity {
                 }
         );
     }
+
+    private void signInWithCredential(PhoneAuthCredential credential) {
+
+    }
 }
