@@ -86,7 +86,7 @@ public class NextPage extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-
+                    Toast.makeText(NextPage.this, "Database Updated!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
