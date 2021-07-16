@@ -29,7 +29,7 @@ public class EmailLoginPage extends AppCompatActivity {
         setContentView(R.layout.activity_email_login_page);
         emailField = findViewById(R.id.editText);
         passwordField = findViewById(R.id.editText2);
-        passwordField.setText(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         loginButton = findViewById(R.id.button3);
         signUpButton = findViewById(R.id.button4);
         progressBar = findViewById(R.id.progressBar);

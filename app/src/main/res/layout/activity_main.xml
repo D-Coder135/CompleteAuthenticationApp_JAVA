@@ -27,8 +27,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginEnd="151dp"
-        android:layout_marginBottom="308dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="298dp"
         android:background="#0577AA"
         android:text="Login With OTP"
         android:textColor="#F4EBEB" />

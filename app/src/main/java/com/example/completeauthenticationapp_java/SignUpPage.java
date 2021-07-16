@@ -29,7 +29,7 @@ public class SignUpPage extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up_page);
         emailField = findViewById(R.id.editText3);
         passwordField = findViewById(R.id.editText4);
-        passwordField.setText(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         signUpButton = findViewById(R.id.button5);
         backButton = findViewById(R.id.button6);
         progressBar = findViewById(R.id.progressBar2);
