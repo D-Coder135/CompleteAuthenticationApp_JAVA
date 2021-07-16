@@ -1,5 +1,6 @@
 package com.example.completeauthenticationapp_java;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -8,9 +9,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.concurrent.TimeUnit;
 
 public class NextPage extends AppCompatActivity {
     EditText OTPField;
@@ -46,6 +52,22 @@ public class NextPage extends AppCompatActivity {
         });
     }
     private void generateOTP() {
+        PhoneAuthProvider.getInstance().verifyPhoneNumber(
+                mobileNumber,
+                60,
+                TimeUnit.SECONDS,
+                this,
+                new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+                    @Override
+                    public void onVerificationCompleted(@NonNull @NotNull PhoneAuthCredential phoneAuthCredential) {
 
+                    }
+
+                    @Override
+                    public void onVerificationFailed(@NonNull @NotNull FirebaseException e) {
+
+                    }
+                }
+        );
     }
 }
