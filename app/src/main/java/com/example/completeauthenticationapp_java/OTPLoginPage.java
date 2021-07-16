@@ -37,6 +37,7 @@ public class OTPLoginPage extends AppCompatActivity {
         sendOTPButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(OTPLoginPage.this, NextPage.class);
 
             }
         });
