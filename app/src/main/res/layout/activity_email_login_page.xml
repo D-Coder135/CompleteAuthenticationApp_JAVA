@@ -27,6 +27,5 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="310dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
 </RelativeLayout>
