@@ -39,6 +39,7 @@ public class OTPLoginPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(OTPLoginPage.this, NextPage.class);
                 intent.putExtra("mobileNumber", countryCodePicker.getFullNumberWithPlus().trim());
+                startActivity(intent);
             }
         });
     }
