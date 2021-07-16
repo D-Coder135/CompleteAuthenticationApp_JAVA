@@ -18,5 +18,6 @@ public class NextPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next_page);
+        mobileNumber = getIntent().getStringExtra("mobileNumber");
     }
 }
