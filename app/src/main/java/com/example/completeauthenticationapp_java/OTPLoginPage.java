@@ -18,5 +18,6 @@ public class OTPLoginPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otplogin_page);
         mobileNumberField = findViewById(R.id.editText50);
+        countryCodePicker = findViewById(R.id.ccp);
     }
 }
