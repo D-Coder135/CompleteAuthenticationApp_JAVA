@@ -62,7 +62,7 @@ public class NextPage extends AppCompatActivity {
                     @Override
                     public void onCodeSent(@NonNull @NotNull String s, @NonNull @NotNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                         super.onCodeSent(s, forceResendingToken);
-
+                        OTP = s;
                     }
 
                     @Override
