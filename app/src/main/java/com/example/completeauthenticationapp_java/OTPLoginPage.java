@@ -21,5 +21,6 @@ public class OTPLoginPage extends AppCompatActivity {
         countryCodePicker = findViewById(R.id.ccp);
         countryCodePicker.registerCarrierNumberEditText(mobileNumberField);
         sendOTPButton = findViewById(R.id.button7);
+        backButton = findViewById(R.id.button8);
     }
 }
