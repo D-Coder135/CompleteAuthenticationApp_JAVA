@@ -43,6 +43,7 @@ public class EmailLoginPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String email = emailField.getText().toString();
+                String password = passwordField.getText().toString();
             }
         });
     }
