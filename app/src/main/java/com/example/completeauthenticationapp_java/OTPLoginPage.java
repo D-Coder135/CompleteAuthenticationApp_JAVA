@@ -30,6 +30,7 @@ public class OTPLoginPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(OTPLoginPage.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
