@@ -16,5 +16,6 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="159dp"
         android:ems="10"
+        android:hint="Enter Your Email"
         android:inputType="textPersonName" />
 </RelativeLayout>
