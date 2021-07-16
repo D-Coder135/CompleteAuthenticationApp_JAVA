@@ -35,6 +35,7 @@ public class EmailLoginPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EmailLoginPage.this, SignUpPage.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
