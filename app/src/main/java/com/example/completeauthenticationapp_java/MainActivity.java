@@ -13,5 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         emailLoginButton = findViewById(R.id.button);
+        OTPLoginButton = findViewById(R.id.button2);
     }
 }
