@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.hbb20.CountryCodePicker;
 
 public class OTPLoginPage extends AppCompatActivity {
     CountryCodePicker countryCodePicker;
     Button sendOTPButton, backButton;
+    EditText mobileNumberField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
