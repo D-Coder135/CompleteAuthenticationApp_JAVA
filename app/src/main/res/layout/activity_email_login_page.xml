@@ -39,5 +39,5 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="129dp"
-        android:text="TextView" />
+        android:text="Enter Your Details To Login." />
 </RelativeLayout>
