@@ -20,5 +20,6 @@ public class EmailLoginPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_login_page);
         emailField = findViewById(R.id.editText);
+        passwordField = findViewById(R.id.editText2);
     }
 }
