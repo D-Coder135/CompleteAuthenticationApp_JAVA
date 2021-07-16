@@ -64,7 +64,7 @@ public class EmailLoginPage extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(EmailLoginPage.this, "Logged In Successfully.", Toast.LENGTH_SHORT).show();
                         } else {
-
+                            Toast.makeText(EmailLoginPage.this, "Error! Please Check Your Email & Password.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
