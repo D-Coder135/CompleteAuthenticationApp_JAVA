@@ -12,7 +12,7 @@ public class NextPage extends AppCompatActivity {
     EditText OTPField;
     Button submitButton;
     FirebaseAuth firebaseAuth;
-    String mobileNumber;
+    String mobileNumber, OTP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
