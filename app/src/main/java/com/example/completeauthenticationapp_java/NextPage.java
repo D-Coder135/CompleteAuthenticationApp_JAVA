@@ -90,6 +90,7 @@ public class NextPage extends AppCompatActivity {
                     Toast.makeText(NextPage.this, "Database Updated!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(NextPage.this, WelcomePage.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         });
