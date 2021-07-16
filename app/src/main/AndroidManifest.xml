@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.completeauthenticationapp_java">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CompleteAuthenticationApp_JAVA">
-        <activity android:name=".WelcomePage"></activity>
+        <activity android:name=".NextPage"></activity>
+        <activity android:name=".WelcomePage" />
         <activity android:name=".SignUpPage" />
         <activity android:name=".OTPLoginPage" />
         <activity android:name=".EmailLoginPage" />
