@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthProvider;
 
 public class NextPage extends AppCompatActivity {
     EditText OTPField;
@@ -35,6 +37,8 @@ public class NextPage extends AppCompatActivity {
                 } else {
                     if (OTPField.getText().toString().length() != 6) {
                         Toast.makeText(NextPage.this, "INVALID OTP!", Toast.LENGTH_SHORT).show();
+                    } else {
+                        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(OTP, OTPField.getText().toString());
                     }
                 }
             }
