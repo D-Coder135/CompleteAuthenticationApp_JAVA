@@ -63,6 +63,8 @@ public class EmailLoginPage extends AppCompatActivity {
                     public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(EmailLoginPage.this, "Logged In Successfully.", Toast.LENGTH_SHORT).show();
+                        } else {
+
                         }
                     }
                 });
