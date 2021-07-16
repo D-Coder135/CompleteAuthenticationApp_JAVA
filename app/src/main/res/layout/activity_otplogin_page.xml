@@ -15,7 +15,7 @@
         android:layout_marginTop="200dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editText50"
         android:layout_width="283dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
