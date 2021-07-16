@@ -1,12 +1,11 @@
 package com.example.completeauthenticationapp_java;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.hbb20.CountryCodePicker;
 
@@ -25,22 +24,16 @@ public class OTPLoginPage extends AppCompatActivity {
         sendOTPButton = findViewById(R.id.button7);
         backButton = findViewById(R.id.button8);
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(OTPLoginPage.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        backButton.setOnClickListener(v -> {
+            Intent intent = new Intent(OTPLoginPage.this, MainActivity.class);
+            startActivity(intent);
+            finish();
         });
 
-        sendOTPButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(OTPLoginPage.this, NextPage.class);
-                intent.putExtra("mobileNumber", countryCodePicker.getFullNumberWithPlus().trim());
-                startActivity(intent);
-            }
+        sendOTPButton.setOnClickListener(v -> {
+            Intent intent = new Intent(OTPLoginPage.this, NextPage.class);
+            intent.putExtra("mobileNumber", countryCodePicker.getFullNumberWithPlus().trim());
+            startActivity(intent);
         });
     }
 }

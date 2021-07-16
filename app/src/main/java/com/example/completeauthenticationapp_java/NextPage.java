@@ -1,19 +1,15 @@
 package com.example.completeauthenticationapp_java;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.FirebaseException;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
@@ -39,18 +35,15 @@ public class NextPage extends AppCompatActivity {
 
         generateOTP();
 
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (OTPField.getText().toString().isEmpty()) {
-                    Toast.makeText(NextPage.this, "ENTER THE OTP!", Toast.LENGTH_SHORT).show();
+        submitButton.setOnClickListener(v -> {
+            if (OTPField.getText().toString().isEmpty()) {
+                Toast.makeText(NextPage.this, "ENTER THE OTP!", Toast.LENGTH_SHORT).show();
+            } else {
+                if (OTPField.getText().toString().length() != 6) {
+                    Toast.makeText(NextPage.this, "INVALID OTP!", Toast.LENGTH_SHORT).show();
                 } else {
-                    if (OTPField.getText().toString().length() != 6) {
-                        Toast.makeText(NextPage.this, "INVALID OTP!", Toast.LENGTH_SHORT).show();
-                    } else {
-                        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(OTP, OTPField.getText().toString());
-                        signInWithCredential(credential);
-                    }
+                    PhoneAuthCredential credential = PhoneAuthProvider.getCredential(OTP, OTPField.getText().toString());
+                    signInWithCredential(credential);
                 }
             }
         });
@@ -83,22 +76,18 @@ public class NextPage extends AppCompatActivity {
     }
 
     private void signInWithCredential(PhoneAuthCredential credential) {
-        firebaseAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    Toast.makeText(NextPage.this, "Database Updated!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(NextPage.this, WelcomePage.class);
-                    startActivity(intent);
-                    finish();
-                } else {
-                    Toast.makeText(NextPage.this, "Error! Database Not Updated.", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(NextPage.this, MainActivity.class);
-                    startActivity(intent);
-                    finish();
+        firebaseAuth.signInWithCredential(credential).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                Toast.makeText(NextPage.this, "Database Updated!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(NextPage.this, WelcomePage.class);
+                startActivity(intent);
+            } else {
+                Toast.makeText(NextPage.this, "Error! Database Not Updated.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(NextPage.this, MainActivity.class);
+                startActivity(intent);
 
-                }
             }
+            finish();
         });
     }
 }
