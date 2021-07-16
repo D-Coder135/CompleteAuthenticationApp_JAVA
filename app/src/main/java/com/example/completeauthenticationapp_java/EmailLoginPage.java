@@ -26,5 +26,6 @@ public class EmailLoginPage extends AppCompatActivity {
         loginButton = findViewById(R.id.button3);
         signUpButton = findViewById(R.id.button4);
         progressBar = findViewById(R.id.progressBar);
+        firebaseAuth = FirebaseAuth.getInstance();
     }
 }
