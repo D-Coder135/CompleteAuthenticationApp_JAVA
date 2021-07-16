@@ -23,5 +23,6 @@ public class EmailLoginPage extends AppCompatActivity {
         emailField = findViewById(R.id.editText);
         passwordField = findViewById(R.id.editText2);
         passwordField.setText(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        loginButton = findViewById(R.id.button3);
     }
 }
