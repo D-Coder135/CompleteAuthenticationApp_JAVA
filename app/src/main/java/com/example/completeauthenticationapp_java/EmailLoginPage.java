@@ -38,5 +38,12 @@ public class EmailLoginPage extends AppCompatActivity {
                 finish();
             }
         });
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
