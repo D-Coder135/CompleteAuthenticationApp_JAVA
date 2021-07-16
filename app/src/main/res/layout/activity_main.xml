@@ -15,7 +15,16 @@
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="256dp"
-        android:layout_marginEnd="101dp"
+        android:layout_marginEnd="107dp"
         android:background="#15AEF3"
         android:text="Login/SignUp With Email" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="320dp"
+        android:text="Button" />
 </RelativeLayout>
