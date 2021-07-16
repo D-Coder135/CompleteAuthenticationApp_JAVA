@@ -29,7 +29,9 @@ public class NextPage extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (OTPField.getText().toString().isEmpty()) {
 
+                }
             }
         });
     }
