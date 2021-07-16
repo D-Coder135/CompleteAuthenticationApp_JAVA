@@ -20,5 +20,6 @@ public class NextPage extends AppCompatActivity {
         setContentView(R.layout.activity_next_page);
         mobileNumber = getIntent().getStringExtra("mobileNumber");
         OTPField = findViewById(R.id.editText51);
+        submitButton = findViewById(R.id.button9);
     }
 }
