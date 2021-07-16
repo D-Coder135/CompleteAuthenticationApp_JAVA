@@ -60,7 +60,9 @@ public class EmailLoginPage extends AppCompatActivity {
                 firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
 
+                        }
                     }
                 });
             }
