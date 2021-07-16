@@ -65,6 +65,7 @@ public class EmailLoginPage extends AppCompatActivity {
                             Toast.makeText(EmailLoginPage.this, "Logged In Successfully.", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(EmailLoginPage.this, WelcomePage.class);
                             startActivity(intent);
+                            finish();
                         } else {
                             Toast.makeText(EmailLoginPage.this, "Error! Please Check Your Email & Password.", Toast.LENGTH_SHORT).show();
                         }
