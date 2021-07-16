@@ -39,6 +39,7 @@ public class NextPage extends AppCompatActivity {
                         Toast.makeText(NextPage.this, "INVALID OTP!", Toast.LENGTH_SHORT).show();
                     } else {
                         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(OTP, OTPField.getText().toString());
+                        signInWithCredential(credential);
                     }
                 }
             }
