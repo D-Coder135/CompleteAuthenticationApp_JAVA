@@ -32,6 +32,8 @@ public class NextPage extends AppCompatActivity {
             public void onClick(View v) {
                 if (OTPField.getText().toString().isEmpty()) {
                     Toast.makeText(NextPage.this, "ENTER THE OTP!", Toast.LENGTH_SHORT).show();
+                } else {
+
                 }
             }
         });
