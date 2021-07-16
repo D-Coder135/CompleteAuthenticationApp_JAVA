@@ -67,7 +67,7 @@ public class NextPage extends AppCompatActivity {
 
                     @Override
                     public void onVerificationCompleted(@NonNull @NotNull PhoneAuthCredential phoneAuthCredential) {
-
+                        signInWithCredential(phoneAuthCredential);
                     }
 
                     @Override
