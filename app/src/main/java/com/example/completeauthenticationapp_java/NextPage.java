@@ -91,6 +91,9 @@ public class NextPage extends AppCompatActivity {
                     Intent intent = new Intent(NextPage.this, WelcomePage.class);
                     startActivity(intent);
                     finish();
+                } else {
+                    Toast.makeText(NextPage.this, "Error! Database Not Updated.", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
