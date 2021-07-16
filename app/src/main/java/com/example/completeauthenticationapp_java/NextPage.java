@@ -21,5 +21,6 @@ public class NextPage extends AppCompatActivity {
         mobileNumber = getIntent().getStringExtra("mobileNumber");
         OTPField = findViewById(R.id.editText51);
         submitButton = findViewById(R.id.button9);
+        firebaseAuth = FirebaseAuth.getInstance();
     }
 }
