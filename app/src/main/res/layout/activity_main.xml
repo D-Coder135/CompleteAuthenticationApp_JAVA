@@ -16,5 +16,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="256dp"
         android:layout_marginEnd="101dp"
+        android:background="#15AEF3"
         android:text="Login/SignUp With Email" />
 </RelativeLayout>
