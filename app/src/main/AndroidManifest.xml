@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CompleteAuthenticationApp_JAVA">
-        <activity android:name=".SignUpPage"></activity>
+        <activity android:name=".WelcomePage"></activity>
+        <activity android:name=".SignUpPage" />
         <activity android:name=".OTPLoginPage" />
         <activity android:name=".EmailLoginPage" />
         <activity android:name=".MainActivity">
