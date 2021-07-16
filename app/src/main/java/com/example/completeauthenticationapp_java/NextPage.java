@@ -72,7 +72,7 @@ public class NextPage extends AppCompatActivity {
 
                     @Override
                     public void onVerificationFailed(@NonNull @NotNull FirebaseException e) {
-
+                        Toast.makeText(NextPage.this, "INVALID OTP!", Toast.LENGTH_SHORT).show();
                     }
                 }
         );
