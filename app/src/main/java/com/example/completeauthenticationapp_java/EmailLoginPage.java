@@ -62,7 +62,7 @@ public class EmailLoginPage extends AppCompatActivity {
                     public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<AuthResult> task) {
 
                     }
-                })
+                });
             }
         });
     }
