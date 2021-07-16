@@ -48,7 +48,9 @@ public class EmailLoginPage extends AppCompatActivity {
                 if (email.isEmpty()) {
                     emailField.setError("Please Enter Your Email.");
                 } else {
+                    if (password.isEmpty()) {
 
+                    }
                 }
             }
         });
