@@ -85,8 +85,10 @@ public class NextPage extends AppCompatActivity {
         firebaseAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
 
+                }
             }
-        })
+        });
     }
 }
