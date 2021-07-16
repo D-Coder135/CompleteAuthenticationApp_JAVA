@@ -39,6 +39,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="207dp"
+        android:background="#03A9F4"
         android:text="LogIn" />
 
 </RelativeLayout>
