@@ -9,11 +9,12 @@
 
     <com.hbb20.CountryCodePicker
         android:id="@+id/ccp"
-        android:layout_width="127dp"
+        android:layout_width="121dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="200dp" />
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="307dp" />
 
     <EditText
         android:id="@+id/editText50"
@@ -21,10 +22,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="197dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="5dp"
         android:ems="10"
         android:hint="Enter Your Mobile Number"
         android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="254dp"
+        android:text="Button" />
 
 </RelativeLayout>
