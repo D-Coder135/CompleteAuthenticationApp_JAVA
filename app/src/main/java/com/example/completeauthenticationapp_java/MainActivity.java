@@ -3,8 +3,10 @@ package com.example.completeauthenticationapp_java;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    Button emailLoginButton, OTPLoginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
